@@ -1,9 +1,6 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Navbar />
+  <router-view />
 </template>
 
 <style lang="scss">
@@ -28,3 +25,26 @@ nav {
   }
 }
 </style>
+<script>
+import Navbar from "./components/Navbar.vue";
+export default {
+  components: { Navbar },
+  mounted() {
+    setInterval(async () => {
+      const cookieGet = this.$cookies.get("uuid");
+      let fetched = await fetch(`${this.$store.state.api}/auth/getuser`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ uuid: cookieGet }),
+      });
+      fetched = await fetched.text();
+      if (fetched) {
+        fetched = JSON.parse(fetched);
+      }
+      this.$store.commit("updateUser", fetched);
+    }, 5000);
+  },
+};
+</script>

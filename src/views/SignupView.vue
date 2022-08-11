@@ -37,7 +37,8 @@ export default {
     changeShow() {
       this.show = !this.show;
     },
-    async submission() {
+    async submission(e) {
+      e.preventDefault();
       const d = await fetch(`${this.$store.state.api}/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -48,13 +49,13 @@ export default {
         }),
       });
       const data = await d.json();
-      console.log(data);
       if (data.error) {
         this.error = true;
       } else {
         this.error = false;
       }
       this.message = data.message;
+      this.$cookies.set(data.uuid);
     },
   },
 };
