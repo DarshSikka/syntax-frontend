@@ -2,12 +2,15 @@
   <div style="background-color: rgb(247, 247, 247)">
     <!-- Hero section starts -->
     <div class="md:block lg:flex justify-around">
-      <div style="font-family: 'Raleway', sans-serif" class="pt-12 lg:my-auto lg:w-1/3 lg:ml-12 lg:pt-0">
+      <div
+        style="font-family: 'Raleway', sans-serif"
+        class="pt-12 lg:my-auto lg:w-1/3 lg:ml-12 lg:pt-0"
+      >
         <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-8xl">SNEAKERS</h1>
         <h1 class="text-3xl">Lorem ipsum dolor sit amet consectetur</h1>
       </div>
       <img
-        class=" -rotate-12 -ml-12 mt-24 mb-48 sm:mx-auto sm:mt-24 sm:mb-48 lg:mt-28 lg:pb-40"
+        class="-rotate-12 -ml-12 mt-24 mb-48 sm:mx-auto sm:mt-24 sm:mb-48 lg:mt-28 lg:pb-40"
         src="../assets/sneakersmain.png"
         alt="nahi aaya"
       />
@@ -27,25 +30,11 @@
 
     <!-- section 3 starts -->
     <div>
-      <h1 class="ml-16 sm:ml-16 md:ml-20 lg:ml-32 text-left text-4xl mt-32 mb-12">Lorem Ipsum</h1>
-      <div class="sm:block md:flex md:justify-center">
-        <div class="w-5/6 mx-auto mt-12 sm:w-5/6     md:w-1/3 md:mt-0     lg:w-1/3 lg:mx-8 lg:mt-0">
-          <a href="/">
-            <img
-              class="rounded-t-3xl"
-              src="../assets/sneakersmain2.jpg"
-              alt="alt"
-            />
-            <div
-              style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
-              class="py-2 text-xl rounded-b-3xl"
-            >
-              Men
-            </div>
-        </a>
-          </div>
-        <div class="w-5/6 mx-auto mt-12 sm:w-5/6     md:w-1/3 md:mt-0     lg:w-1/3 lg:mx-8 lg:mt-0">
-            <a href="/">
+      <div class="sm:block md:flex md:justify-center mt-32">
+        <div
+          class="w-5/6 mx-auto mt-12 sm:w-5/6 md:w-1/3 md:mt-0 lg:w-1/3 lg:mx-8 lg:mt-0"
+        >
+          <router-link to="/products">
             <img
               class="rounded-t-3xl"
               src="../assets/sneakersmain2.jpg"
@@ -53,80 +42,91 @@
             />
             <div
               style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+              "
+              class="py-2 text-xl rounded-b-3xl"
+            >
+              Men
+            </div>
+          </router-link>
+        </div>
+        <div
+          class="w-5/6 mx-auto mt-12 sm:w-5/6 md:w-1/3 md:mt-0 lg:w-1/3 lg:mx-8 lg:mt-0"
+        >
+          <router-link to="/products">
+            <img
+              class="rounded-t-3xl"
+              src="../assets/sneakersmain2.jpg"
+              alt="alt"
+            />
+            <div
+              style="
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+              "
               class="py-2 text-xl rounded-b-3xl"
             >
               Women
             </div>
-          </a>
-          </div>
+          </router-link>
+        </div>
       </div>
-
 
       <div class="sm:block md:flex mt-12 justify-center">
         <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
-          <a href="/">
-          <img
-            class="rounded-t-3xl w-full"
-            src="../assets/sneakersmain2.jpg"
-            alt="women"
-          />
-          <div
-            style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
-            class="py-2 text-xl rounded-b-3xl"
-          >
-            Lorem Ipsum
-          </div>
-          </a>
+          <router-link to="/products">
+            <img
+              class="rounded-t-3xl w-full"
+              src="../assets/sneakersmain2.jpg"
+              alt="women"
+            />
+            <div
+              style="
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+              "
+              class="py-2 text-xl rounded-b-3xl"
+            >
+              Brands
+            </div>
+          </router-link>
         </div>
         <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
-          <a href="/">
-          <img
-            class="rounded-t-3xl"
-            src="../assets/sneakersmain2.jpg"
-            alt="women"
-          />
-          <div
-            style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
-            class="py-2 text-xl rounded-b-3xl"
-          >
-            Lorem Ipsum
-          </div>
-          </a>
+          <router-link to="/products">
+            <img
+              class="rounded-t-3xl"
+              src="../assets/sneakersmain2.jpg"
+              alt="women"
+            />
+            <div
+              style="
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+              "
+              class="py-2 text-xl rounded-b-3xl"
+            >
+              Colour
+            </div>
+          </router-link>
         </div>
         <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
-          <a href="/">
-          <img
-            class="rounded-t-3xl"
-            src="../assets/sneakersmain2.jpg"
-            alt="women"
-          />
-          <div
-            style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
-            class="py-2 text-xl rounded-b-3xl"
-          >
-            Lorem Ipsum
-          </div>
-          </a>
-        </div>
-        <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
-          <a href="/">
-          <img
-            class="rounded-t-3xl"
-            src="../assets/sneakersmain2.jpg"
-            alt="women"
-          />
-          <div
-            style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
-            class="py-2 text-xl rounded-b-3xl"
-          >
-            Lorem Ipsum
-          </div>
-          </a>
+          <router-link to="/products">
+            <img
+              class="rounded-t-3xl"
+              src="../assets/sneakersmain2.jpg"
+              alt="women"
+            />
+            <div
+              style="
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+              "
+              class="py-2 text-xl rounded-b-3xl"
+            >
+              Category
+            </div>
+          </router-link>
         </div>
       </div>
     </div>

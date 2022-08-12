@@ -105,6 +105,7 @@ export default {
             }
           );
           const order = orderobject.json();
+          this.$route.push("/order");
         },
         prefill: {
           name: `Your customer name`,
