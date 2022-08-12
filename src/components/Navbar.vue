@@ -44,12 +44,6 @@
         <router-link
           style="background-color: rgb(99 102 241)"
           class="px-4 py-2 mx-3 rounded-md"
-          to="/profile"
-          >{{ $store.state.user.username || "Guest" }}
-        </router-link>
-        <router-link
-          style="background-color: rgb(99 102 241)"
-          class="px-4 py-2 mx-3 rounded-md"
           to="/cart"
           >Your Cart</router-link
         >
@@ -59,6 +53,12 @@
           to="/orders"
           >Your Orders</router-link
         >
+        <router-link
+          style="background-color: rgb(99 102 241)"
+          class="bold px-4 py-2 mx-3 rounded-md"
+          to="/profile"
+          >Your Profile
+        </router-link>
       </span>
     </div>
   </div>

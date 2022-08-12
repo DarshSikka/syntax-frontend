@@ -1,16 +1,25 @@
 <template>
   <div v-if="err">Cart is empty, please add items to cart to checkout</div>
-  <div v-else>
+  <div v-else class="w-1/3 mx-auto mt-24 p-7 border border-grey">
     <input
       type="text"
       v-model="phone"
       placeholder="Enter your phone number"
+      class="w-full pl-2 py-2 border-0"
+      style="outline: 1.5px solid grey"
     /><textarea
       type="text"
       v-model="address"
       placeholder="Enter your address"
+      class="w-full pl-2 py-2 border-0 mt-4 h-32"
+      style="resize: none; outline: 1.5px solid grey"
     ></textarea>
-    <button @click="openpayment">PAY</button>
+    <button
+      class="bg-blue-200 pt-2 pb-2 pl-16 pr-16 rounded mt-6"
+      @click="openpayment"
+    >
+      PAY
+    </button>
   </div>
 </template>
 

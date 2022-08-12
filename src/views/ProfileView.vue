@@ -4,9 +4,9 @@
     You are logged out.
     <router-link to="/login">Login to see your profile</router-link>
   </div>
-  <div :key="objectkey" v-for="objectkey in Object.keys($store.state.user)">
-    {{ objectkey }}: {{ $store.state.user[objectkey] }}
-  </div>
+  <div>Username: {{ $store.state.user.username }}</div>
+  <div>Email: {{ $store.state.user.email }}</div>
+  <div></div>
   <button @click="logout">_Logout_</button>
 </template>
 <script>

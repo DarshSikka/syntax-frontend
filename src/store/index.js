@@ -10,7 +10,7 @@ export default createStore({
       cart: [],
       orders: []
     },
-    api: "http://localhost:4000",
+    api: "https://syntax-backend-exun.herokuapp.com",
     razorpay_api_key: "rzp_test_bS3McLh7PnpKwQ" //this is not secret, it gives the user access only to send money to our account
   },
   mutations: {
