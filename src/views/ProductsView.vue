@@ -3,7 +3,7 @@
     <!-- Left side navbar sorting -->
     <div>
       <div class="flex justify-between m-8">
-        <div class="flex">
+        <div class="block md:flex">
           <div class="mx-2">
             <label for="brand">Brand</label>
             <select
@@ -94,7 +94,7 @@
       </div>
       <div>
         <h1 class="text-4xl mt-8">Products</h1>
-        <div class="grid grid-cols-3">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div
             class="m-8 pb-8"
             style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"

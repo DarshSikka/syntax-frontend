@@ -18,7 +18,7 @@
     <!-- Hero section ends -->
     <!-- section 2 div1 -->
     <ProductSlideShow
-      :title="product.title"
+      :title="product.name"
       :description="product.description"
       :photo="product.image_url"
       :price="product.price"

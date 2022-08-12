@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center bg-black text-white">
+  <div class="block sm:block md:flex justify-center bg-black text-white">
     <i
       class="fa fa-angle-left my-auto ml-24 cursor-pointer"
       style="font-size: 42px"
