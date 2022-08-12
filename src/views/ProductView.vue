@@ -1,15 +1,54 @@
 <template>
-  {{ product.name }}
-  {{ product.price }}
-  <img :src="product.image_url" width="400" height="400" />
-  <div v-if="!$store.state.user.cart.includes(product.product_id)">
-    <button @click="addToCart">Add to cart</button>
-  </div>
-  <div v-else>
-    Already in Cart
-    <button @click="removeFromCart">Remove</button>
+  <div>
+    <!-- main product -->
+    <div class="block mx-auto lg:flex">
+      <div class="w-2/3 mx-auto mt-20 mb-20 md:w-1/2 lg:w-1/3 lg:mt-10 lg:mx-20">
+          <img class="w-full" :src="product.image_url" width="400" height="400" />
+      </div>
+      <div class="text-left m-8 text-xl md:pr-20 lg:mt-20 ">
+        <div class="font-bold">
+          {{ product.brand }}
+        </div>
+        <div class="font-bold">
+          {{ product.name }}
+        </div>
+        <br />
+        <div class="font-semibold">
+          {{ product.description }}
+        </div>
+          <br />
+            <div class="border-b-2 border-black pb-4 pr-8 font-semibold">
+              ₹{{ product.price }}
+            </div>
+          <div class="pt-4">
+            Color: {{ product.color }}
+          </div>
+        <div>
+          Gender: {{ product.gender }}
+        </div>
+        <div>
+          Category: {{ product.category }}
+        </div>
+        <div>
+          Stock: {{ product.stock }}
+        </div>
+        <div>
+              <div class="mt-8" v-if="!$store.state.user.cart.includes(product.product_id)">
+                  <button class="text-black hover:text-white border-2 border-black px-2.5 py-1 bg-transparent hover:bg-black duration-300" @click="addToCart">Add to cart</button>
+              </div>
+              <div class="mt-8" v-else>
+                  <p>Already in Cart</p>
+                <button class="text-black hover:text-white border-2 border-black px-2.5 py-1 bg-transparent hover:bg-black duration-300 mt-2" @click="removeFromCart">Remove</button>
+              </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+
+
+
 <script>
 export default {
   data() {
