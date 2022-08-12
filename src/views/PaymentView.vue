@@ -78,9 +78,25 @@ export default {
         amount: order.amount,
         currency: order.currency,
         name: `Sneaker Store`,
-        description: `Buying 2 items`,
+        description: `Buying ${cart.length} item(s)`,
         order_id: order.order_id,
-        handler: function () {},
+        handler: async () => {
+          const orderobject = await fetch(
+            `${this.$store.state.api}/products/makeorder`,
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                username: this.$store.state.user.username,
+                email: this.$store.state.user.email,
+                items: cart,
+                address: this.address,
+                phone: this.phone,
+              }),
+            }
+          );
+          const order = orderobject.json();
+        },
         prefill: {
           name: `Your customer name`,
           email: `Your customer email`,

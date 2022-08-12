@@ -7,7 +7,8 @@ export default createStore({
       username: "",
       email: "",
       verified: false,
-      cart: []
+      cart: [],
+      orders: []
     },
     api: "http://localhost:4000",
     razorpay_api_key: "rzp_test_bS3McLh7PnpKwQ" //this is not secret, it gives the user access only to send money to our account
@@ -22,7 +23,8 @@ export default createStore({
         verified: usr.verified,
         username: usr.username,
         email: usr.email,
-        cart: usr.cart
+        cart: usr.cart,
+        orders: usr.orders
       };
     },
   },

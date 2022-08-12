@@ -47,6 +47,18 @@
           to="/profile"
           >{{ $store.state.user.username || "Guest" }}
         </router-link>
+        <router-link
+          style="background-color: rgb(99 102 241)"
+          class="px-4 py-2 mx-3 rounded-md"
+          to="/cart"
+          >Your Cart</router-link
+        >
+        <router-link
+          style="background-color: rgb(99 102 241)"
+          class="px-4 py-2 mx-3 rounded-md"
+          to="/orders"
+          >Your Orders</router-link
+        >
       </span>
     </div>
   </div>
