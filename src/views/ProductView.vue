@@ -2,10 +2,10 @@
   <div>
     <!-- main product -->
     <div class="block mx-auto lg:flex">
-      <div class="w-2/3 mx-auto mt-20 mb-20 md:w-1/2 lg:w-1/3 lg:mt-10 lg:mx-20">
-          <img class="w-full" :src="product.image_url" width="400" height="400" />
+      <div class="w-1/2 mx-auto mt-20 mb-20 md:w-1/2 lg:w-1/3 lg:mt-10 lg:mx-20">
+          <img class="w-full" :src="product.image_url"  />
       </div>
-      <div class="text-left m-8 text-xl md:pr-20 lg:mt-20 ">
+      <div class="w-1/2 mx-auto text-left m-8 text-xl md:pr-20 lg:mt-20 ">
         <div class="font-bold">
           {{ product.brand }}
         </div>

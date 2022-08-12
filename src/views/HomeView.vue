@@ -37,14 +37,12 @@
           <router-link to="/products">
             <img
               class="rounded-t-3xl"
-              src="../assets/sneakersmain2.jpg"
+              src="../assets/men.jpg"
               alt="alt"
             />
             <div
               style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              "
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
               class="py-2 text-xl rounded-b-3xl"
             >
               Men
@@ -57,14 +55,12 @@
           <router-link to="/products">
             <img
               class="rounded-t-3xl"
-              src="../assets/sneakersmain2.jpg"
+              src="../assets/women.jpg"
               alt="alt"
             />
             <div
               style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              "
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
               class="py-2 text-xl rounded-b-3xl"
             >
               Women
@@ -78,14 +74,12 @@
           <router-link to="/products">
             <img
               class="rounded-t-3xl w-full"
-              src="../assets/sneakersmain2.jpg"
+              src="../assets/sneakers1.png"
               alt="women"
             />
             <div
               style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              "
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
               class="py-2 text-xl rounded-b-3xl"
             >
               Brands
@@ -96,14 +90,12 @@
           <router-link to="/products">
             <img
               class="rounded-t-3xl"
-              src="../assets/sneakersmain2.jpg"
+              src="../assets/sneakers2.png"
               alt="women"
             />
             <div
               style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              "
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
               class="py-2 text-xl rounded-b-3xl"
             >
               Colour
@@ -113,15 +105,13 @@
         <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
           <router-link to="/products">
             <img
-              class="rounded-t-3xl"
+              class="rounded-t-3xl h-5/6"
               src="../assets/sneakersmain2.jpg"
               alt="women"
             />
             <div
               style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              "
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
               class="py-2 text-xl rounded-b-3xl"
             >
               Category
