@@ -55,7 +55,7 @@
         <div class="flex">
           <div class="mx-1">
             <button
-              :class="`py-1 border-2 border-black border-solid bg-transparent w-20 ${
+              :class="`py-1 border-2 border-black border-solid w-20 ${
                 gender === 'B' ? 'bg-black text-white' : 'bg-white text-black'
               }`"
               @click="setGender('B')"
@@ -79,7 +79,7 @@
           </div>
           <div class="mx-1">
             <button
-              :class="`py-1 border-2 border-black border-solid bg-transparent w-20 ${
+              :class="`py-1 border-2 border-black border-solid w-20 ${
                 gender === 'F'
                   ? 'bg-black text-white'
                   : 'bg-transparent text-black'

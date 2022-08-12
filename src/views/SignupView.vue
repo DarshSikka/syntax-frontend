@@ -1,25 +1,4 @@
 <template>
-  <!-- <div>
-    <h1>Signup</h1>
-    <form @submit="submission">
-      <input
-        required
-        v-model="username"
-        type="text"
-        placeholder="Enter Username"
-      />
-      <input v-model="email" required type="email" placeholder="Email" />
-      <input
-        required
-        :type="show ? 'text' : 'password'"
-        placeholder="Enter Password"
-        v-model="password"
-      />
-      <button type="button" @click="changeShow">👀</button>
-      <input type="submit" value="Submit" />
-      <p :style="{ color: error ? 'red' : 'green' }">{{ message }}</p>
-    </form>
-  </div> -->
   <div class="w-5/6 sm:2/3 md:w-3/4  lg:w-1/3 mx-auto mt-24 p-7 border border-grey">
     <h1 class="pt-8 text-3xl text-center">Sign Up</h1>
 
