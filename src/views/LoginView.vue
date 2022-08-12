@@ -9,7 +9,7 @@
     <input type="password" placeholder="Password" v-model="password" />
     <input type="submit" value="Submit" />
   </form> -->
-  <div class="w-1/3 mx-auto mt-24 p-7 border border-grey">
+  <div class="w-5/6 sm:2/3 md:w-3/4  lg:w-1/3 mx-auto mt-24 p-7 border border-grey">
     <h1 class="pt-8 text-3xl text-center">Login</h1>
 
     <div class="text-center my-5"></div>

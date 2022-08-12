@@ -1,31 +1,26 @@
 <template>
-  <!-- <div >
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <span v-if="$store.state.user.guest">
-      <router-link to="/signup">Signup</router-link> |
-      <router-link to="/login">Login</router-link> |
-    </span>
-    <span v-if="$store.state.user.username">
-      <router-link to="/profile"
-        >{{ $store.state.user.username || "Guest" }}
-      </router-link>
-    </span> 
-  </div> -->
   <div
     style="background-color: rgb(79, 70, 229)"
-    class="flex justify-between py-3"
+    class="block sm:flex justify-between py-3"
   >
-    <div class="logo">
-      <p class="text-3xl ml-32 text-white cursor-pointer">Sneakers</p>
+    <div class="logo my-auto">
+      <p class="text-3xl sm:ml-32 text-white cursor-pointer">Sneakers</p>
     </div>
-    <div class="mr-32 flex items-center text-white">
+    <div class="sm:flex sm:justify-center sm:mr-32 lg:flex items-center text-white mt-3">
       <router-link
         style="background-color: rgb(99 102 241)"
         class="px-4 py-2 mx-3 rounded-md"
         to="/"
         >Home</router-link
       >
+      <router-link
+        style="background-color: rgb(99 102 241)"
+        class="px-4 py-2 mx-3 rounded-md"
+        to="/products"
+        >Products</router-link
+      >
+
+
       <span v-if="$store.state.user.guest">
         <router-link
           style="background-color: rgb(99 102 241)"
@@ -53,12 +48,13 @@
           to="/orders"
           >Your Orders</router-link
         >
-        <router-link
+                <router-link
           style="background-color: rgb(99 102 241)"
           class="bold px-4 py-2 mx-3 rounded-md"
           to="/profile"
           >Your Profile
         </router-link>
+
       </span>
     </div>
   </div>

@@ -1,13 +1,13 @@
 <template>
   <div style="background-color: rgb(247, 247, 247)">
     <!-- Hero section starts -->
-    <div class="flex justify-around">
-      <div style="font-family: 'Raleway', sans-serif" class="my-auto w-1/3">
-        <h1 class="text-8xl">SNEAKERS</h1>
+    <div class="md:block lg:flex justify-around">
+      <div style="font-family: 'Raleway', sans-serif" class="pt-12 lg:my-auto lg:w-1/3 lg:ml-12 lg:pt-0">
+        <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-8xl">SNEAKERS</h1>
         <h1 class="text-3xl">Lorem ipsum dolor sit amet consectetur</h1>
       </div>
       <img
-        class="bg-transparent -rotate-12 mt-28 pb-40"
+        class=" -rotate-12 -ml-12 mt-24 mb-48 sm:mx-auto sm:mt-24 sm:mb-48 lg:mt-28 lg:pb-40"
         src="../assets/sneakersmain.png"
         alt="nahi aaya"
       />
@@ -24,138 +24,28 @@
       @previous="prev"
     />
     <!-- Section 2 ends -->
-    <!-- Section 3 starts -->
+
+    <!-- section 3 starts -->
     <div>
-      <h1 class="text-left ml-32 text-4xl mt-32 mb-12">Lorem Ipsum</h1>
-      <!-- section 3 div1 -->
-      <div class="flex">
-        <div id="parent-hover" class="w-1/3 mx-20 bg-transparent">
-          <a href="/login">
-            <img
-              id="child-image-hover"
-              class="w-full cursor-pointer"
-              src="../assets/sneakersmain.png"
-              alt="oops"
-            />
-            <p
-              id="child-hover"
-              class="text-white text-3xl text-semibold text-center -mt-32 pb-32"
-            >
-              Lorem Ipsum Dolar.
-            </p>
-          </a>
-        </div>
-        <div id="parent-hover" class="w-1/3 mx-20 bg-transparent">
-          <a href="/login">
-            <img
-              id="child-image-hover"
-              class="w-full cursor-pointer"
-              src="../assets/sneakersmain.png"
-              alt="oops"
-            />
-            <p
-              id="child-hover"
-              class="text-white text-3xl text-semibold text-center -mt-32 pb-32"
-            >
-              Lorem Ipsum Dolar.
-            </p>
-          </a>
-        </div>
-        <div id="parent-hover" class="w-1/3 mx-20 bg-transparent">
-          <a href="/login">
-            <img
-              id="child-image-hover"
-              class="w-full cursor-pointer"
-              src="../assets/sneakersmain.png"
-              alt="oops"
-            />
-            <p
-              id="child-hover"
-              class="text-white text-3xl text-semibold text-center -mt-32 pb-32"
-            >
-              Lorem Ipsum Dolar.
-            </p>
-          </a>
-        </div>
-      </div>
-      <!-- section 3 div2 -->
-      <div class="flex mt-24">
-        <div id="parent-hover" class="w-1/3 mx-20 bg-transparent">
-          <a href="/login">
-            <img
-              id="child-image-hover"
-              class="w-full cursor-pointer"
-              src="../assets/sneakersmain.png"
-              alt="oops"
-            />
-            <p
-              id="child-hover"
-              class="text-white text-3xl text-semibold text-center -mt-32 pb-32"
-            >
-              Lorem Ipsum Dolar.
-            </p>
-          </a>
-        </div>
-        <div id="parent-hover" class="w-1/3 mx-20 bg-transparent">
-          <a href="/login">
-            <img
-              id="child-image-hover"
-              class="w-full cursor-pointer"
-              src="../assets/sneakersmain.png"
-              alt="oops"
-            />
-            <p
-              id="child-hover"
-              class="text-white text-3xl text-semibold text-center -mt-32 pb-32"
-            >
-              Lorem Ipsum Dolar.
-            </p>
-          </a>
-        </div>
-        <div id="parent-hover" class="w-1/3 mx-20 bg-transparent">
-          <a href="/login">
-            <img
-              id="child-image-hover"
-              class="w-full cursor-pointer"
-              src="../assets/sneakersmain.png"
-              alt="oops"
-            />
-            <p
-              id="child-hover"
-              class="text-white text-3xl text-semibold text-center -mt-32 pb-32"
-            >
-              Lorem Ipsum Dolar.
-            </p>
-          </a>
-        </div>
-      </div>
-      <!-- section 3 div 2 ends -->
-    </div>
-    <!-- section 3 ends -->
-    <!-- section 4 starts -->
-    <div>
-      <h1 class="text-left ml-32 text-4xl mt-32 mb-12">Lorem Ipsum</h1>
-      <div class="flex mx-72 justify-between">
-        <a href="/">
-          <div>
+      <h1 class="ml-16 sm:ml-16 md:ml-20 lg:ml-32 text-left text-4xl mt-32 mb-12">Lorem Ipsum</h1>
+      <div class="sm:block md:flex md:justify-center">
+        <div class="w-5/6 mx-auto mt-12 sm:w-5/6     md:w-1/3 md:mt-0     lg:w-1/3 lg:mx-8 lg:mt-0">
+          <a href="/">
             <img
               class="rounded-t-3xl"
               src="../assets/sneakersmain2.jpg"
               alt="alt"
             />
             <div
-              style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              "
+              style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
               class="py-2 text-xl rounded-b-3xl"
             >
               Men
             </div>
-          </div>
         </a>
-        <a href="/">
-          <div>
+          </div>
+        <div class="w-5/6 mx-auto mt-12 sm:w-5/6     md:w-1/3 md:mt-0     lg:w-1/3 lg:mx-8 lg:mt-0">
+            <a href="/">
             <img
               class="rounded-t-3xl"
               src="../assets/sneakersmain2.jpg"
@@ -163,34 +53,35 @@
             />
             <div
               style="
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              "
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
               class="py-2 text-xl rounded-b-3xl"
             >
               Women
             </div>
+          </a>
           </div>
-        </a>
       </div>
-      <div class="flex mt-12 justify-center">
-        <div style="width: 17%" class="mx-2">
+
+
+      <div class="sm:block md:flex mt-12 justify-center">
+        <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
+          <a href="/">
           <img
-            class="rounded-t-3xl"
+            class="rounded-t-3xl w-full"
             src="../assets/sneakersmain2.jpg"
             alt="women"
           />
           <div
             style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            "
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
             class="py-2 text-xl rounded-b-3xl"
           >
             Lorem Ipsum
           </div>
+          </a>
         </div>
-        <div style="width: 17%" class="mx-2">
+        <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
+          <a href="/">
           <img
             class="rounded-t-3xl"
             src="../assets/sneakersmain2.jpg"
@@ -198,15 +89,15 @@
           />
           <div
             style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            "
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
             class="py-2 text-xl rounded-b-3xl"
           >
             Lorem Ipsum
           </div>
+          </a>
         </div>
-        <div style="width: 17%" class="mx-2">
+        <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
+          <a href="/">
           <img
             class="rounded-t-3xl"
             src="../assets/sneakersmain2.jpg"
@@ -214,15 +105,15 @@
           />
           <div
             style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            "
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
             class="py-2 text-xl rounded-b-3xl"
           >
             Lorem Ipsum
           </div>
+          </a>
         </div>
-        <div style="width: 17%" class="mx-2">
+        <div class="w-4/6 mx-auto my-4 sm:mt-8 md:w-1/6 md:mx-2">
+          <a href="/">
           <img
             class="rounded-t-3xl"
             src="../assets/sneakersmain2.jpg"
@@ -230,16 +121,16 @@
           />
           <div
             style="
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            "
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;"
             class="py-2 text-xl rounded-b-3xl"
           >
             Lorem Ipsum
           </div>
+          </a>
         </div>
       </div>
     </div>
+    <p class="mt-24">Made with &lt;3 by Exun Clan</p>
   </div>
 </template>
 

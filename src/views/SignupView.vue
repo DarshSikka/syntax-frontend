@@ -20,7 +20,7 @@
       <p :style="{ color: error ? 'red' : 'green' }">{{ message }}</p>
     </form>
   </div> -->
-  <div class="w-1/3 mx-auto mt-24 p-7 border border-grey">
+  <div class="w-5/6 sm:2/3 md:w-3/4  lg:w-1/3 mx-auto mt-24 p-7 border border-grey">
     <h1 class="pt-8 text-3xl text-center">Sign Up</h1>
 
     <div class="text-center my-8"></div>
@@ -51,7 +51,7 @@
           required
         />
       </div>
-      <div class="w-4/5 mx-auto mt-5">
+      <div class="w-4/5 mx-auto mt-5 flex">
         <input
           :type="show ? 'text' : 'password'"
           name="password"
@@ -62,10 +62,12 @@
           v-model="password"
           required
         />
+        <button @click="changeShow" class="show ml-3" type="button" v-html="show ? `<i class='fa fa-eye' style='font-size: 24px' aria-hidden='true'></i>` : `<i class='fa fa-eye-slash' style='font-size: 24px;' aria-hidden='true'></i>` ">
+
+</button>
+
+
       </div>
-      <button @click="changeShow" class="show" type="button">
-        {{ show ? "Hide" : "Show" }}
-      </button>
 
       <div class="w-1/2 mx-auto mt-5">
         <input
