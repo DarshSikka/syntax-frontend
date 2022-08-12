@@ -20,35 +20,67 @@
       <p :style="{ color: error ? 'red' : 'green' }">{{ message }}</p>
     </form>
   </div> -->
-           <div class="w-1/3 mx-auto mt-24 p-7 border border-grey">
-            <h1 class="pt-8 text-3xl text-center">Sign Up</h1>
-    
-            <div class="text-center my-8">
-            </div>
-            
-            <form action="" method="POST">
-              <p :style="{ color: error ? 'red' : 'green' }">{{ message }}</p>
-                <div class="w-4/5 mx-auto mt-5">
-                    <input type="text" name="name" id="name" class="w-full pl-2 py-2 border-0" style="outline: 1.5px solid grey" placeholder="Enter your name" />
-                </div>
-                <div class="w-4/5 mx-auto mt-5">
-                    <input type="email" name="email" id="email" class="w-full pl-2 py-2 border-0" placeholder="Enter your email" style="outline: 1.5px solid grey;" />
-                </div>    
-                <div class="w-4/5 mx-auto mt-5">
-                    <input type="password" name="password" class="w-full pl-2 py-2 border-0" id="password" style="outline: 1.5px solid grey;" placeholder="Create Password" />
-                </div>
-                <div class="w-4/5 mx-auto mt-5">
-                    <input type="password" name="password2" class="w-full pl-2 py-2 border-0" id="password2" style="outline: 1.5px solid grey;" placeholder="Confirm Password" />
-                </div>
-                
-                <div class="w-1/2 mx-auto mt-5">
-                  <input style="background-color: rgb(99 102 241);" class="w-full pl-2 py-2 border-0 cursor-pointer text-white" type="submit" value="Register" />
-                </div>
+  <div class="w-1/3 mx-auto mt-24 p-7 border border-grey">
+    <h1 class="pt-8 text-3xl text-center">Sign Up</h1>
 
-            </form>
-            <p class="text-center mt-5 pb-8">Already have an account? <a class="underline" href="/users/login">Login</a></p>
-        </div>
+    <div class="text-center my-8"></div>
 
+    <form @submit="submission">
+      <p :style="{ color: error ? 'red' : 'green' }">{{ message }}</p>
+      <div class="w-4/5 mx-auto mt-5">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="w-full pl-2 py-2 border-0"
+          style="outline: 1.5px solid grey"
+          placeholder="Enter your username"
+          v-model="username"
+          required
+        />
+      </div>
+      <div class="w-4/5 mx-auto mt-5">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="w-full pl-2 py-2 border-0"
+          placeholder="Enter your email"
+          style="outline: 1.5px solid grey"
+          v-model="email"
+          required
+        />
+      </div>
+      <div class="w-4/5 mx-auto mt-5">
+        <input
+          :type="show ? 'text' : 'password'"
+          name="password"
+          class="w-full pl-2 py-2 border-0"
+          id="password"
+          style="outline: 1.5px solid grey"
+          placeholder="Create Password"
+          v-model="password"
+          required
+        />
+      </div>
+      <button @click="changeShow" class="show" type="button">
+        {{ show ? "Hide" : "Show" }}
+      </button>
+
+      <div class="w-1/2 mx-auto mt-5">
+        <input
+          style="background-color: rgb(99 102 241)"
+          class="w-full pl-2 py-2 border-0 cursor-pointer text-white"
+          type="submit"
+          value="Register"
+        />
+      </div>
+    </form>
+    <p class="text-center mt-5 pb-8">
+      Already have an account?
+      <a class="underline" href="/login">Login</a>
+    </p>
+  </div>
 </template>
 <script>
 export default {
@@ -82,9 +114,10 @@ export default {
         this.error = true;
       } else {
         this.error = false;
+        this.$router.push("/products");
       }
       this.message = data.message;
-      this.$cookies.set(data.uuid);
+      this.$cookies.set("uuid", data.uuid);
     },
   },
 };

@@ -15,7 +15,7 @@ export default createStore({
   mutations: {
     updateUser(state, usr) {
       if (!usr) {
-        return;
+        return state.user = {guest: true, username: "", email: "", verified: false, cart: []}
       }
       state.user = {
         guest: false,

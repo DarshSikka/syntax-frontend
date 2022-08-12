@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const routes = [
@@ -39,11 +39,16 @@ const routes = [
     path: "/checkout",
     name: "checkout",
     component: ()=>import("../views/PaymentView.vue")
+  },
+  {
+    path: "/product/:id",
+    name: "product",
+    component: ()=>import("../views/ProductView.vue")
   }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
