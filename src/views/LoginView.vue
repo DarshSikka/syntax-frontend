@@ -1,5 +1,5 @@
 <template>
-  <h1>Login</h1>
+  <!-- <h1>Login</h1>
   <form @submit="submission">
     <input
       type="text"
@@ -8,7 +8,29 @@
     />
     <input type="password" placeholder="Password" v-model="password" />
     <input type="submit" value="Submit" />
-  </form>
+  </form> -->
+      <div class="w-1/3 mx-auto mt-24 p-7 border border-grey">
+                <h1 class="pt-8 text-3xl text-center">Login</h1>
+            
+                <div class="text-center my-5">
+                </div>   
+        <form action="" method="POST">
+
+            <div class="w-4/5 mx-auto mt-5">
+                <input type="text" name="email" id="email" class="w-full pl-2 py-2 border-0" style="outline: 1.5px solid grey" placeholder="Enter your email" />
+            </div>
+
+            <div class="w-4/5 mx-auto mt-5">
+                <input type="password" name="password" id="password" class="w-full pl-2 py-2 border-0" style="outline: 1.5px solid grey" placeholder="Enter your password" >
+            </div>
+
+            <div class="w-1/2 mx-auto mt-5">
+                <input style="background-color: rgb(99 102 241);" class="w-full pl-2 py-2 border-0 cursor-pointer text-white" type="submit" value="Login" />
+              </div>
+
+      </form>
+        <p class="text-center mt-5 pb-8">No account? <a class="underline" href="/users/register">Register</a></p>
+</div>
 </template>
 <script>
 export default {
