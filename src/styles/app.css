@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Raleway:wght@100;300&display=swap');
+
+
+#parent-hover #child-hover{
+    visibility: hidden;
+}
+
+#parent-hover:hover #child-hover{
+    visibility: visible;
+}
+
+#parent-hover:hover #child-image-hover{
+    opacity: 0.2;
+}
+
+#parent-hover{
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+
+#parent-hover:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
